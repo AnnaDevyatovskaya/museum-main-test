@@ -55,6 +55,53 @@ body{
     color: #FFFFFF;
 }
 
+.navigation{
+    position: absolute;
+    width: 720px;
+    height: 50px;
+    left: 650px;
+    top: 0px;
+}
+
+.navigation_inline{
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    top: 0px;
+    color: #FFFFFF;
+}
+
+.navigation_visiting{
+    position: absolute;
+    left: 0px;
+}
+
+.navigation_explore{
+    position: absolute;
+    left: 161px;
+}
+
+.navigation_video{
+    position: absolute;
+    left: 321px;
+}
+
+.navigation_tickets{
+    position: absolute;
+    left: 460px;
+}
+
+.navigation_contacts{
+    position: absolute;
+    left: 618px;
+}
+
 main{
     position: absolute;
     width: 1440px;
@@ -79,7 +126,6 @@ main{
     height: 390px;
     left: 0px;
     top: 0px;
-    background-color: aqua;
 }
 
 .title_welcome{
@@ -129,6 +175,14 @@ main{
     color: #FFFFFF;
 }
 
+.button{
+    position: absolute;
+    width: 360px;
+    height: 75px;
+    left: 0px;
+    top: 315px;
+}
+
 .button_background{
     position: absolute;
     width: 360px;
@@ -137,14 +191,6 @@ main{
     top: 0px;
     background: #710707;
     border-radius: 10px;
-}
-
-.button{
-    position: absolute;
-    width: 360px;
-    height: 75px;
-    left: 0px;
-    top: 315px;
 }
 
 .button_text{
@@ -172,7 +218,6 @@ main{
     left: 465px;
     top: -114px;
 }
-
 .visiting{
     position: absolute;
     width: 1440px;
