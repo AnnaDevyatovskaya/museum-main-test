@@ -1,0 +1,33 @@
+body{
+    width: 1920px;
+    height: 6245px;
+    background: #FFFFFF;
+}
+
+main{
+    position: absolute;
+    width: 1440px;
+    height: 5556px;
+    left: 240px;
+    top: 314px;
+}
+
+.header{
+    position: absolute;
+    width: 1920px;
+    height: 200px;
+    left: -310px;
+    top: -74px;
+    background: #030303;
+    border-radius: 0px;
+}
+
+.welcome{
+    position: absolute;
+    width: 1920px;
+    height: 750px;
+    left: -240px;
+    top: -114px;
+    background: #030303;
+    border-radius: 0px;
+}
