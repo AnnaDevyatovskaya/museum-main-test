@@ -128,6 +128,13 @@ main{
     top: 0px;
 }
 
+.welcome_image_background{
+    position: absolute;
+    width: 1215px;
+    height: 750px;
+    left: 705px;
+    top: 0px;
+}
 .title_welcome{
     position: absolute;
     width: 380px;
@@ -211,14 +218,6 @@ main{
     color: #FFFFFF;
 }
 
-.welcome_image_background{
-    position: absolute;
-    width: 1215px;
-    height: 750px;
-    left: 465px;
-    top: -114px;
-}
-
 .visiting{
     position: absolute;
     width: 1440px;
@@ -261,7 +260,12 @@ main{
     top: 193px;
 }
 
-.royal_palace_image{
+.royal_palace_image,
+.denon_wing_image,
+.colonnade_perrault_image,
+.greek_hall_image,
+.mona_lisa_image,
+.night_palace_image{
     position: absolute;
     width: 440px;
     height: 285px;
@@ -270,10 +274,13 @@ main{
     border-radius: 0px;
 }
 
-.royal_palace_title{
+.royal_palace_title,
+.denon_wing_title,
+.colonnade_perrault_title,
+.greek_hall_title,
+.mona_lisa_title,
+.night_palace_title{
     position: absolute;
-    width: 252px;
-    height: 35px;
     left: 0px;
     top: 310px;
     font-family: Forum;
@@ -286,7 +293,12 @@ main{
     color: #000000;
 }
 
-.royal_palace_underline{
+.royal_palace_title{
+    width: 252px;
+    height: 35px;
+}
+
+.visiting_underline{
     position: absolute;
     width: 300px;
     height: 2px;
@@ -332,39 +344,9 @@ main{
     top: 193px;
 }
 
-.denon_wing_image{
-    position: absolute;
-    width: 440px;
-    height: 285px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-}
-
 .denon_wing_title{
-    position: absolute;
     width: 233px;
     height: 35px;
-    left: 0px;
-    top: 310px;
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.denon_wing_underline{
-    position: absolute;
-    width: 300px;
-    height: 2px;
-    left: 0px;
-    top: 354px;
-    background: #710707;
-    border-radius: 0px;
 }
 
 .colonnade_perrault{
@@ -375,39 +357,9 @@ main{
     top: 193px;
 }
 
-.colonnade_perrault_image{
-    position: absolute;
-    width: 440px;
-    height: 285px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-}
-
 .colonnade_perrault_title{
-    position: absolute;
     width: 403px;
     height: 35px;
-    left: 0px;
-    top: 310px;
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.colonnade_perrault_underline{
-    position: absolute;
-    width: 300px;
-    height: 2px;
-    left: 0px;
-    top: 354px;
-    background: #710707;
-    border-radius: 0px;
 }
 
 .greek_hall{
@@ -418,39 +370,9 @@ main{
     top: 693px;
 }
 
-.greek_hall_image{
-    position: absolute;
-    width: 440px;
-    height: 285px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-}
-
 .greek_hall_title{
-    position: absolute;
     width: 214px;
     height: 35px;
-    left: 0px;
-    top: 310px;
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.greek_hall_underline{
-    position: absolute;
-    width: 300px;
-    height: 2px;
-    left: 0px;
-    top: 354px;
-    background: #710707;
-    border-radius: 0px;
 }
 
 .mona_lisa{
@@ -461,39 +383,9 @@ main{
     top: 693px;
 }
 
-.mona_lisa_image{
-    position: absolute;
-    width: 440px;
-    height: 285px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-}
-
 .mona_lisa_title{
-    position: absolute;
     width: 197px;
     height: 35px;
-    left: 0px;
-    top: 310px;
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.mona_lisa_underline{
-    position: absolute;
-    width: 300px;
-    height: 2px;
-    left: 0px;
-    top: 354px;
-    background: #710707;
-    border-radius: 0px;
 }
 
 .night_palace{
@@ -504,37 +396,250 @@ main{
     top: 693px;
 }
 
-.night_palace_image{
+.night_palace_title{
+    width: 250px;
+    height: 35px;
+}
+
+.explore_container{
     position: absolute;
-    width: 440px;
-    height: 285px;
+    width: 1440px;
+    height: 715px;
+    left: 0px;
+    top: 1976px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.explore_title{
+    position: absolute;
+    width: 660px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.explore_underline{
+    position: absolute;
+    width: 660px;
+    height: 3px;
+    left: 0px;
+    top: 115px;
+    background: #710707;
+    border-radius: 0px;
+}
+
+.explore_text_1,
+.explore_text_2,
+.explore_text_3{
+    position: absolute;
+    width: 660px;
+    height: 77px;
+    left: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.explore_text_1{
+    top: 193px;
+}
+
+.explore_text_2{
+    top: 295px;
+}
+
+.explore_text_3{
+    top: 397px;
+}
+.explore_image{
+    position: absolute;
+    width: 720px;
+    height: 700px;
+    left: 720px;
+    top: 15px;
+    border-radius: 0px;
+}
+
+.video_frame{
+    position: absolute;
+    width: 1440px;
+    height: 714px;
+    left: 0px;
+    top: 2856px;
+}
+
+.video{
+    position: absolute;
+    width: 1440px;
+    height: 629px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
 }
 
-.night_palace_title{
+.play_button{
     position: absolute;
-    width: 250px;
-    height: 35px;
+    width: 220px;
+    height: 220px;
+    left: 610px;
+    top: 205px;
+    border-radius: 0px;
+}
+
+.video_buttons{
+    position: absolute;
+    width: 1440px;
+    height: 85px;
     left: 0px;
-    top: 310px;
+    top: 629px;
+}
+
+.video_text_block{
+    position: absolute;
+    width: 1440px;
+    height: 90px;
+    left: 0px;
+    top: 3610px;
+}
+
+.video_text_title{
+    position: absolute;
+    width: 605px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 80px;
+    line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    color: #9D8665; 
+}
+
+.video_text{
+    position: absolute;
+    width: 720px;
+    height: 90px;
+    left: 720px;
+    top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
     color: #000000;
 }
 
-.night_palace_underline{
+#wrapper_tickets{
     position: absolute;
-    width: 300px;
-    height: 2px;
+    width: 1920px;
+    height: 893px;
+    left: -240px;
+    top: 4089px;
+    background: #030303;
+    border-radius: 0px;
+}
+.tickets{
+    position: absolute;
+    width: 1440px;
+    height: 743px;
     left: 0px;
-    top: 354px;
+    top: 3850px;
+}
+
+.tickets_title{
+    position: absolute;
+    width: 471px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.tickets_underline{
+    position: absolute;
+    width: 1440px;
+    height: 3px;
+    left: 0px;
+    top: 115px;
     background: #710707;
     border-radius: 0px;
+}
+
+.tickets_image{
+    position: absolute;
+    width: 720px;
+    height: 550px;
+    left: 0px;
+    top: 193px;
+    border-radius: 0px;
+}
+
+.ticket_type{
+    position: absolute;
+    width: 270px;
+    height: 262px;
+    left: 780px;
+    top: 193px;
+}
+
+.ticket_type_title{
+    position: absolute;
+    width: 156px;
+    height: 33px;
+    left: 0px;
+    top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.permanent_exhibition_p{
+    position: absolute;
+    width: 270px;
+    height: 25px;
+    left: 0px;
+    top: 83px;
+}
+
+.temporary_exhibition_p{
+    position: absolute;
+    width: 270px;
+    height: 25px;
+    left: 0px;
+    top: 158px;
+}
+
+.combined_exhibition_p{
+    position: absolute;
+    width: 270px;
+    height: 25px;
+    left: 0px;
+    top: 233px;
 }
