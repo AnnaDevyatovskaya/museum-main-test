@@ -143,6 +143,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -159,6 +160,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -184,6 +186,7 @@ main{
     height: 75px;
     left: 0px;
     top: 315px;
+    margin: 0;
 }
 
 .button_background{
@@ -203,6 +206,7 @@ main{
     color: #ffffff;
     transition: 0.2s;
     cursor: pointer;
+    margin: 0;
 }
 
 .visiting{
@@ -221,6 +225,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #9D8665;
 }
@@ -231,6 +236,7 @@ main{
     height: 3px;
     left: 0px;
     top: 115px;
+    margin: 0;
     background: #710707;
     border-radius: 0px;
 }
@@ -241,6 +247,7 @@ main{
     height: 422px;
     left: 0px;
     top: 193px;
+    margin: 0;
 }
 
 .visiting_image{
@@ -258,6 +265,7 @@ main{
     font-size: 32px;
     line-height: 35px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #000000;
 }
@@ -367,6 +375,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -463,6 +472,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #9D8665; 
 }
@@ -478,6 +488,7 @@ main{
     font-weight: 300;
     font-size: 22px;
     line-height: 38px;
+    margin: 0;
     display: flex;
     align-items: center;
     color: #000000;
@@ -508,6 +519,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -702,6 +714,7 @@ main{
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    margin: 0;
     text-transform: uppercase;
     color: #9D8665;
 }
