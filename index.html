@@ -5,7 +5,7 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Forum"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">  
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <title>museum</title>
   </head>
 
@@ -24,11 +24,11 @@
             </div>
             <nav class="navigation">
               <ul class="navigation_inline">
-                <li class="navigation_visiting">Visiting</li>
-                <li class="navigation_explore">Explore</li>
-                <li class="navigation_video">Video</li>
-                <li class="navigation_tickets">Tickets</li>
-                <li class="navigation_contacts">Contacts</li>
+                <li class="navigation_visiting"><a href="#id_visiting" class="li_footer">Visiting</a></li>
+                <li class="navigation_explore"><a href="#id_explore" class="li_footer">Explore</a></li>
+                <li class="navigation_video"><a href="#id_video" class="li_footer">Video</a></li>
+                <li class="navigation_tickets"><a href="#id_tickets" class="li_footer">Tickets</a></li>
+                <li class="navigation_contacts"><a href="#id_contacts" class="li_footer">Contacts</a></li>
               </ul>
             </nav>
           </div>
@@ -39,8 +39,8 @@
 
     <main>
       <!--section welcome start-->
-      <section id="id_welcome">
-        <div class="container_welcome"><img src="img\background.jpg" alt="Louvre" class="welcome_image_background"></div>
+      <section>
+        <div class="container_welcome" id="id_welcome"><img src="img\background.jpg" alt="Louvre" class="welcome_image_background"></div>
         <div class="welcome">
           <div class="title_welcome">Welcome</div>
           <div class="title_to_the_louvre">to the Louvre</div>
@@ -57,8 +57,8 @@
       <!--section welcome end-->
 
       <!--section visiting start-->
-        <section id="id_visiting">
-          <div class="visiting">
+        <section>
+          <div class="visiting" id="id_visiting">
             <div class="visiting_title">VIRTUAL TOUR</div>
             <div class="visiting_title_underline"></div>
             <div class="royal_palace">
@@ -120,8 +120,8 @@
       <!--section visiting end-->
 
       <!--section explore start-->
-        <section id="id_explore">
-          <div class="explore_wrap"></div>
+        <section>
+          <div class="explore_wrap" id="id_explore"></div>
           <div class="explore_container">
             <div class="explore_image">
               <img src="img\explore_block_img.png" alt="Explore Art">
@@ -136,8 +136,8 @@
       <!--section explore end-->
 
       <!--section video start-->
-        <section id="id_video">
-          <div class="video_frame">
+        <section>
+          <div class="video_frame" id="id_video">
             <img src="img\video.png" alt="Video" class="video">
             <img src="img\play_button.svg" alt="Play Button" class="play_button">
             <img src="img\video_buttons.svg" alt="Video buttons bar" class="video_buttons">
@@ -150,17 +150,17 @@
       <!--section video end-->
 
       <!--section tickets start-->
-      <section id="id_tickets">
-        <div class="tickets_wrap"></div>
+      <section>
+        <div class="tickets_wrap" id="id_tickets"></div>
         <div class="tickets">
           <div class="tickets_title">Buy Tickets</div>
-          <div class="tickets_underline"></div>
+          <div class="long_underline"></div>
           <img src="img\tickets_img.jpg" alt="Tickets Art" class="tickets_image">
           <div class="ticket_type">
             <div class="ticket_type_title">Ticket Type</div>
-            <span class="permanent_exhibition_p"><input type="radio" id="radio_button" class="permanent_exhibition" checked>Permanent exhibition</span>
-            <span class="temporary_exhibition_p"><input type="radio" id="radio_button" class="temporary_exhibition">Temporary exhibition</span>
-            <span class="combined_admission_p"><input type="radio" id="radio_button" class="combined_admission">Combined Admission</span>
+            <label class="tickets_type_permanent"><input type="radio" name="radio" checked>Permanent exhibition</label>
+            <label class="tickets_type_temporary"><input type="radio" name="radio">Temporary exhibition</label>
+            <label class="tickets_type_combined"><input type="radio" name="radio">Combined Admission</label>
           </div>
           <div class="amount">
             <div class="amount_title">Amount</div>
@@ -168,7 +168,7 @@
               <span class="amount_age_title">Basic 18+</span>
               <div class="amount_button">
                 <button type="button" onclick="this.nextElementSibling.stepDown()" class="amount_button_minus_plus">-</button>
-                <input type="number" min="1" max="99" readonly class="amount_button_counter">
+                <input type="number" min="1" max="99" value="1" readonly class="amount_button_counter">
                 <button type="button" onclick="this.previousElementSibling.stepUp()" class="amount_button_minus_plus">+</button>
               </div>
             </div>
@@ -176,9 +176,15 @@
               <span class="amount_age_title">Senior 65+</span>
               <div class="amount_button">
                 <button type="button" onclick="this.nextElementSibling.stepDown()" class="amount_button_minus_plus">-</button>
-                <input type="number" min="1" max="99" readonly class="amount_button_counter">
+                <input type="number" min="1" max="99" value="1" readonly class="amount_button_counter">
                 <button type="button" onclick="this.previousElementSibling.stepUp()" class="amount_button_minus_plus">+</button>
               </div>
+            </div>
+            <div class="amount_total">
+              <span class="amount_total_counter">Total €220</span>
+            </div>
+            <div>
+              <button type="submit" class="button_buy">Buy Now</button>
             </div>
           </div>
         </div>
@@ -186,10 +192,10 @@
     <!--section tickets end-->
 
     <!--section contacts start-->
-      <section id="id_contacts">
-        <div class="contacts">
+      <section>
+        <div class="contacts" id="id_contacts">
           <div class="contacts_title">Contacts</div>
-          <div class="contacts_underline"></div>
+          <div class="long_underline"></div>
           <div class="contacts_info">
             <div class="contacts_info_title">Palais Royal<br>Musee du Louvre</div>
             <div class="contacts_address">address: 75001 Paris, France</div>
@@ -214,18 +220,42 @@
         </div>
         <nav>
           <ul class="footer_nav">
-            <li class="li_footer"><a href="#id_welcome">Welcome</a></li>
-            <li class="li_footer"><a href="#id_visiting">Visiting</a></li>
-            <li class="li_footer"><a href="#id_explore">Explore</a></li>
-            <li class="li_footer"><a href="#id_video">Video</a></li>
-            <li class="li_footer"><a href="#id_tickets">Tickets</a></li>
-            <li class="li_footer"><a href="#id_contacts">Contacts</a></li>
+            <li><a href="#id_welcome" class="li_footer">Welcome</a></li>
+            <li><a href="#id_visiting" class="li_footer">Visiting</a></li>
+            <li><a href="#id_explore" class="li_footer">Explore</a></li>
+            <li><a href="#id_video" class="li_footer">Video</a></li>
+            <li><a href="#id_tickets" class="li_footer">Tickets</a></li>
+            <li><a href="#id_contacts" class="li_footer">Contacts</a></li>
           </ul>
         </nav>
-        <div class="social_icons">
-          <nav>
-            <ul></ul>
-          </nav>
+        <div class="social_icon">
+          <ul class="social_icon_list">
+            <li class="social_icon_item">
+              <a href="https://www.youtube.com/user/louvre" class="social_icon_link">
+                <img src="img\Youtube.svg" alt="YouTube">
+              </a>
+            </li>
+            <li class="social_icon_item">
+              <a href="https://www.instagram.com/museelouvre/" class="social_icon_link">
+                <img src="img\Instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="social_icon_item">
+              <a href="https://www.facebook.com/museedulouvre" class="social_icon_link">
+                <img src="img\Facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="social_icon_item">
+              <a href="http://twitter.com/museelouvre" class="social_icon_link">
+                <img src="img\Twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li class="social_icon_item">
+              <a href="https://www.pinterest.fr/museedulouvre/" class="social_icon_link">
+                <img src="img\Pinterest.svg" alt="Pinterest">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

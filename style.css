@@ -41,8 +41,6 @@ body{
 
 .logo_text{
     position: absolute;
-    width: 125px;
-    height: 50px;
     left: 70px;
     font-family: Forum;
     font-style: normal;
@@ -57,8 +55,8 @@ body{
 .navigation{
     position: absolute;
     width: 720px;
-    height: 50px;
     left: 650px;
+    top: -20px;
 }
 
 .navigation_inline{
@@ -71,7 +69,6 @@ body{
     font-size: 22px;
     line-height: 50px;
     letter-spacing: 2px;
-    top: 0px;
     color: #FFFFFF;
 }
 
@@ -515,7 +512,7 @@ main{
     color: #FFFFFF;
 }
 
-.tickets_underline{
+.long_underline{
     position: absolute;
     width: 1440px;
     height: 3px;
@@ -551,28 +548,31 @@ main{
     color: #FFFFFF;
 }
 
-.permanent_exhibition_p,
-.temporary_exhibition_p,
-.combined_admission_p{
+.tickets_type_permanent,
+.tickets_type_temporary,
+.tickets_type_combined{
+    display: block;
     position: absolute;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
+    padding-right: 0;
+    margin-bottom: 49px;
     cursor: pointer;
 }
 
-.permanent_exhibition_p{
+.tickets_type_permanent{
     top: 83px;
 }
 
-.temporary_exhibition_p{
+.tickets_type_temporary{
     top: 158px;
 }
 
-.combined_exhibition_p{
+.tickets_type_combined{
     top: 233px;
 }
 
@@ -589,6 +589,7 @@ main{
     width: 100px;
     height: 33px;
     left: 50px;
+    padding-bottom: 50px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -622,19 +623,24 @@ main{
 }
 
 .amount_button{
-    position: absolute;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
     width: 150px;
     height: 50px;
-    top: 40px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
+    border: 3px solid #ffffff;
 }
 
 .amount_button_counter{
     all: unset;
     width: 3em;
-    justify-content: space-between;
-    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .amount_button_minus_plus{
@@ -648,6 +654,35 @@ main{
     border: 0;
     padding-right: 6px;
     cursor: pointer;
+}
+
+.amount_total_counter{
+    position: absolute;
+    top: 309px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 1.65px;
+    color: #FFFFFF;
+}
+
+.button_buy{
+    width: 175px;
+    height: 50px;
+    margin-top: 392px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #000000;
+    transition: 0.2s;
 }
 
 .contacts{
@@ -669,15 +704,6 @@ main{
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #9D8665;
-}
-
-.contacts_underline{
-    position: absolute;
-    width: 1440px;
-    height: 3px;
-    top: 115px;
-    background: #710707;
-    border-radius: 0px;
 }
 
 .contacts_info{
@@ -775,11 +801,17 @@ main{
     transition: 0.2s;
 }
 
-.social_icons{
+.social_icon{
     position: absolute;
     width: 336px;
     height: 48px;
     left: 1104px;
     top: 88px;
+}
+
+.social_icon_list{
+    list-style: none;
+    display: block;
+    columns: 5;
     justify-content: space-between;
 }
