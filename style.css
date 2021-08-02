@@ -42,6 +42,8 @@ body{
 .logo_text{
     position: absolute;
     left: 70px;
+    top: 0px;
+    margin: 0;
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
