@@ -39,7 +39,8 @@
 
     <main>
       <!--section welcome start-->
-      <div class="container_welcome"><img src="img\background.jpg" alt="Louvre" class="welcome_image_background"></div>
+      <section id="id_welcome">
+        <div class="container_welcome"><img src="img\background.jpg" alt="Louvre" class="welcome_image_background"></div>
         <div class="welcome">
           <div class="title_welcome">Welcome</div>
           <div class="title_to_the_louvre">to the Louvre</div>
@@ -52,10 +53,11 @@
             </form>
           </div>
         </div>
+      </section>
       <!--section welcome end-->
 
       <!--section visiting start-->
-        <section class="section">
+        <section id="id_visiting">
           <div class="visiting">
             <div class="visiting_title">VIRTUAL TOUR</div>
             <div class="visiting_title_underline"></div>
@@ -118,7 +120,8 @@
       <!--section visiting end-->
 
       <!--section explore start-->
-        <section class="section">
+        <section id="id_explore">
+          <div class="explore_wrap"></div>
           <div class="explore_container">
             <div class="explore_image">
               <img src="img\explore_block_img.png" alt="Explore Art">
@@ -133,7 +136,7 @@
       <!--section explore end-->
 
       <!--section video start-->
-        <section class="section">
+        <section id="id_video">
           <div class="video_frame">
             <img src="img\video.png" alt="Video" class="video">
             <img src="img\play_button.svg" alt="Play Button" class="play_button">
@@ -147,25 +150,43 @@
       <!--section video end-->
 
       <!--section tickets start-->
-      <section class="section">
+      <section id="id_tickets">
+        <div class="tickets_wrap"></div>
         <div class="tickets">
           <div class="tickets_title">Buy Tickets</div>
           <div class="tickets_underline"></div>
           <img src="img\tickets_img.jpg" alt="Tickets Art" class="tickets_image">
           <div class="ticket_type">
             <div class="ticket_type_title">Ticket Type</div>
-            <p class="permanent_exhibition_p"><input type="radio" id="radio_button" class="permanent_exhibition" checked>Permanent exhibition</p>
-            <p class="temporary_exhibition_p"><input type="radio" id="radio_button" class="temporary_exhibition">Temporary exhibition</p>
-            <p class="combined_admission_p"><input type="radio" id="radio_button" class="combined_admission">Combined Admission</p>
+            <span class="permanent_exhibition_p"><input type="radio" id="radio_button" class="permanent_exhibition" checked>Permanent exhibition</span>
+            <span class="temporary_exhibition_p"><input type="radio" id="radio_button" class="temporary_exhibition">Temporary exhibition</span>
+            <span class="combined_admission_p"><input type="radio" id="radio_button" class="combined_admission">Combined Admission</span>
           </div>
           <div class="amount">
+            <div class="amount_title">Amount</div>
+            <div class="amount_age_basic">
+              <span class="amount_age_title">Basic 18+</span>
+              <div class="amount_button">
+                <button type="button" onclick="this.nextElementSibling.stepDown()" class="amount_button_minus_plus">-</button>
+                <input type="number" min="1" max="99" readonly class="amount_button_counter">
+                <button type="button" onclick="this.previousElementSibling.stepUp()" class="amount_button_minus_plus">+</button>
+              </div>
+            </div>
+            <div class="amount_age_senior">
+              <span class="amount_age_title">Senior 65+</span>
+              <div class="amount_button">
+                <button type="button" onclick="this.nextElementSibling.stepDown()" class="amount_button_minus_plus">-</button>
+                <input type="number" min="1" max="99" readonly class="amount_button_counter">
+                <button type="button" onclick="this.previousElementSibling.stepUp()" class="amount_button_minus_plus">+</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     <!--section tickets end-->
 
     <!--section contacts start-->
-      <section class="section">
+      <section id="id_contacts">
         <div class="contacts">
           <div class="contacts_title">Contacts</div>
           <div class="contacts_underline"></div>
@@ -181,12 +202,30 @@
     <!--section contacts end-->
     <!--footer start-->
     <footer class="footer">
-      <div class="logo">
-        <div class="logo_image">
-          <img src="img\logo_img.svg" alt="logo">
+      <div class="footer_wrap"></div>
+      <div class="footer_section">
+        <div class="logo">
+          <div class="logo_image">
+            <img src="img\logo_img.svg" alt="logo">
+          </div>
+          <div class="logo_text">
+            <div>LOUVRE</div>
+          </div>
         </div>
-        <div class="logo_text">
-          <div>LOUVRE</div>
+        <nav>
+          <ul class="footer_nav">
+            <li class="li_footer"><a href="#id_welcome">Welcome</a></li>
+            <li class="li_footer"><a href="#id_visiting">Visiting</a></li>
+            <li class="li_footer"><a href="#id_explore">Explore</a></li>
+            <li class="li_footer"><a href="#id_video">Video</a></li>
+            <li class="li_footer"><a href="#id_tickets">Tickets</a></li>
+            <li class="li_footer"><a href="#id_contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="social_icons">
+          <nav>
+            <ul></ul>
+          </nav>
         </div>
       </div>
     </footer>

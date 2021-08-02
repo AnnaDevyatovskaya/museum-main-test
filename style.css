@@ -3,6 +3,7 @@ body{
     max-width: 1920px;
     margin: 0 auto;
     height: 6245px;
+    justify-content: space-between;
     background: #FFFFFF;
 }
 
@@ -27,6 +28,7 @@ body{
     width: 195px;
     height: 50px;
     left: -70px;
+    top: 0px;
 }
 
 .logo_image{
@@ -203,6 +205,7 @@ main{
     letter-spacing: 2px;
     color: #ffffff;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .visiting{
@@ -340,6 +343,15 @@ main{
     top: 693px;
 }
 
+.explore_wrap{
+    position: absolute;
+    width: 1920px;
+    height: 865px;
+    left: -240px;
+    top: 1865px;
+    background: #030303;
+}
+
 .explore_container{
     position: absolute;
     width: 1440px;
@@ -347,15 +359,11 @@ main{
     left: 0px;
     top: 1976px;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: #030303;
 }
 
 .explore_title{
     position: absolute;
-    width: 660px;
-    height: 90px;
-    left: 0px;
-    top: 0px;
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
@@ -370,10 +378,8 @@ main{
     position: absolute;
     width: 660px;
     height: 3px;
-    left: 0px;
     top: 115px;
     background: #710707;
-    border-radius: 0px;
 }
 
 .explore_text_1,
@@ -449,16 +455,11 @@ main{
     position: absolute;
     width: 1440px;
     height: 90px;
-    left: 0px;
     top: 3610px;
 }
 
 .video_text_title{
     position: absolute;
-    width: 605px;
-    height: 90px;
-    left: 0px;
-    top: 0px;
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
@@ -485,6 +486,16 @@ main{
     color: #000000;
 }
 
+.tickets_wrap{
+    position: absolute;
+    width: 1920px;
+    height: 893px;
+    left: -240px;
+    top: 3814px;
+    background: #030303;
+    border-radius: 0px;
+}
+
 .tickets{
     position: absolute;
     width: 1440px;
@@ -494,8 +505,6 @@ main{
 
 .tickets_title{
     position: absolute;
-    width: 471px;
-    height: 90px;
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
@@ -544,10 +553,15 @@ main{
 
 .permanent_exhibition_p,
 .temporary_exhibition_p,
-.combined_exhibition_p{
+.combined_admission_p{
     position: absolute;
-    width: 270px;
-    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .permanent_exhibition_p{
@@ -568,6 +582,72 @@ main{
     height: 342px;
     left: 1290px;
     top: 193px;
+}
+
+.amount_title{
+    position: absolute;
+    width: 100px;
+    height: 33px;
+    left: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.amount_age_basic{
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    top: 44px;
+}
+
+.amount_age_senior{
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    top: 169px;
+}
+
+.amount_age_title{
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.amount_button{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 40px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.amount_button_counter{
+    all: unset;
+    width: 3em;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.amount_button_minus_plus{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #ffffff;
+    background-color: #030303;
+    border: 0;
+    padding-right: 6px;
+    cursor: pointer;
 }
 
 .contacts{
@@ -625,6 +705,12 @@ main{
     position: absolute;
     width: 282px;
     height: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .contacts_address{
@@ -638,6 +724,7 @@ main{
 .contacts_mail{
     top: 195px;
 }
+
 .contacts_map{
     position: absolute;
     width: 960px;
@@ -646,10 +733,53 @@ main{
     top: 193px;
 }
 
-.footer{
+.footer_wrap{
     position: absolute;
     width: 1920px;
     height: 300px;
-    top: 5945px;
+    left: -240px;
+    top: 5670px;
     background: #030303;
+}
+
+.footer_section{
+    position: absolute;
+    width: 1440px;
+    height: 150px;
+    left: 75px;
+    top: 5745px;
+}
+
+.footer_nav{
+    position: absolute;
+    width: 366px;
+    height: 150px;
+    left: 340px;
+    top: 0px;
+    display: block;
+    columns: 2;
+    column-gap: 153px;
+    width: 366px;
+    list-style-type: none;
+}
+
+.li_footer{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.social_icons{
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    left: 1104px;
+    top: 88px;
+    justify-content: space-between;
 }
